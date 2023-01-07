@@ -22,11 +22,11 @@
             </div>
             <div class="col-md-4">
                 <label for="cardNumber" class="form-label">Card #</label>
-                <input type="tel" class="form-control" maxlength="16" size="16" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX">
+                <input type="tel" inputmode="numeric" class="form-control" maxlength="16" size="16" id="cardNumber" placeholder="XXXXXXXXXXXXXXXX">
             </div>
             <div class="col-md-4">
                 <label for="inputPassword4" class="form-label">CVC #</label>
-                <input type="password" class="form-control" maxlength="4" size="4" id="cvc" placeholder="0000">
+                <input type="password" class="form-control" minlength="1" maxlength="4" size="4" id="cvc" placeholder="0000">
             </div>
             <div class="col-4">
                 <label for="address" class="form-label">Amount</label>
@@ -58,11 +58,11 @@
             </div>
             <div class="col-md-3 pb-2">
                 <label for="zip" class="form-label">Postal Code</label>
-                <input type="number" class="form-control" id=" zip">
+                <input type="number" class="form-control" id="zip">
             </div>
             <!-- We accept (cards)-->
             <div class="col-6">
-                <p for=" exampleFormControlTextarea1" class="form-label pb-2">We accept:</p>
+                <label for=" exampleFormControlTextarea1" class="form-label pb-2" id="accept">We accept:</label>
                 <ul class="list-group list-group-flush" id="radios">
                     <li class="list-group-item p-0"><label class="form-check-label" for="flexRadioDefault2">
                             <p class="d-flex justify-content-start" style="border: 1px solid rgb(172, 177, 182); border-radius: 5px; padding: 10px; background-color: rgb(107, 117, 125); color: white;">

@@ -32,6 +32,8 @@ window.onload = function() {
     console.log(zip.value);
     let radios = document.getElementById("radios");
     console.log(radios.value);
+    let msgLabel = document.getElementById("accept");
+    console.log(accept.value);
     let message = document.getElementById("message");
     console.log(message.value);
 
@@ -61,8 +63,13 @@ window.onload = function() {
     if (zip.value === "") {
       zip.classList.add("bg-danger", "bg-opacity-25");
     }
-    if (radios.value === "") {
-      radios.classList.add("bg-danger", "bg-opacity-25");
+    if (
+      radio1.value === "" ||
+      radio2.value === "" ||
+      radio3.value === "" ||
+      radio4.value === ""
+    ) {
+      radios.classList.replace("bg-danger", "bg-opacity-25");
     }
     if (message.value === "") {
       message.classList.add("bg-danger", "bg-opacity-25");
